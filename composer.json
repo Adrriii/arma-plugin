@@ -1,0 +1,29 @@
+{
+    "name": "arma/plugin",
+    "description": "Contains public source code for the arma mod.",
+    "type": "symfony-bundle",
+    "version": "2.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrien Boitelle",
+            "email": "adrien.boitelle@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "php": ">=8.2",
+      "symfony/framework-bundle": "*"
+    },
+    "provide": {
+      "myhordes/prime": "self.version"
+    },
+    "replace": {
+      "myhordes/prime": "self.version"
+    },
+    "autoload": {
+      "psr-4": {
+        "MyHordes\\Prime\\": ["src/","src/templates"]
+      }
+    }
+}
