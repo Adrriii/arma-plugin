@@ -13,7 +13,7 @@ class TownDataService implements FixtureProcessorInterface {
                 'name' =>'small',
                 'label' =>'Kleine Stadt',
                 'preset' => true,
-                'ranked' => [1,15,30],
+                'ranked' => [1,15,35],
                 'orderBy' =>  2,
                 'help' => 'Der Schwierigkeitsgrad ist in dieser Stadt geringer. Deswegen gilt sie nicht für das Saison-Ranking. Die Außenwelt ist durchschnittlich 13x13 Felder groß.',
             ],
