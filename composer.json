@@ -2,7 +2,7 @@
     "name": "arma/plugin",
     "description": "Contains public source code for the arma mod.",
     "type": "symfony-bundle",
-    "version": "2.0.0",
+    "version": "1.0.0",
     "license": "MIT",
     "authors": [
         {
@@ -16,14 +16,14 @@
       "symfony/framework-bundle": "*"
     },
     "provide": {
-      "myhordes/prime": "self.version"
+      "arma/plugin": "self.version"
     },
     "replace": {
-      "myhordes/prime": "self.version"
+      "arma/plugin": "self.version"
     },
     "autoload": {
       "psr-4": {
-        "MyHordes\\Prime\\": ["src/","src/templates"]
+        "Arma\\Plugin\\": ["src/","src/templates"]
       }
     }
 }

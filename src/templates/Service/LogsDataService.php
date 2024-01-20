@@ -1,6 +1,6 @@
 <?php
 
-namespace MyHordes\Prime\Service;
+namespace Arma\Plugin\Service;
 
 use App\Entity\LogEntryTemplate;
 use MyHordes\Plugins\Interfaces\FixtureProcessorInterface;
