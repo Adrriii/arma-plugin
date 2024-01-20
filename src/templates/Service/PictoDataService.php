@@ -32,7 +32,7 @@ class PictoDataService implements FixtureProcessorInterface {
 				'label' => 'Âme légendaire',
 				'description' => 'Votre âme a assimilé des générations entières de survivants. Vous êtes une légende.',
 				'icon' => 'r_reset',
-				'rare' => false,
+				'rare' => true,
 			],
 		]);
     }
