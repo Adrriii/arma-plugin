@@ -12,7 +12,10 @@ services:
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
 
     Arma\Plugin\Service\LogsDataService:
-      tags: [ { name: 'myhordes.fixtures.logs', priority: 1 } ]
+      tags: [ { name: 'myhordes.fixtures.logs', priority: 100 } ]
 
     Arma\Plugin\Service\PictoDataService:
-      tags: [ { name: 'myhordes.fixtures.pictos', priority: 1 } ]
+      tags: [ { name: 'myhordes.fixtures.pictos', priority: 100 } ]
+
+    MyHordes\Fixtures\Service\TownDataService:
+      tags: [ { name: 'myhordes.fixtures.town', priority: 100 } ]
