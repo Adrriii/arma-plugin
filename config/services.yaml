@@ -11,6 +11,12 @@ services:
         autowire: true      # Automatically injects dependencies in your services.
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
 
+    Arma\Plugin\Service\AwardTitleDataService:
+      tags: [ { name: 'myhordes.fixtures.awards.titles', priority: 100 } ]
+
+    Arma\Plugin\Service\EmoteDataService:
+      tags: [ { name: 'myhordes.fixtures.emotes', priority: 100 } ]
+
     Arma\Plugin\Service\LogsDataService:
       tags: [ { name: 'myhordes.fixtures.logs', priority: 100 } ]
 
