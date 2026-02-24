@@ -23,5 +23,5 @@ services:
     Arma\Plugin\Service\PictoDataService:
       tags: [ { name: 'myhordes.fixtures.pictos', priority: 100 } ]
 
-    MyHordes\Fixtures\Service\TownDataService:
+    Arma\Plugin\Service\TownDataService:
       tags: [ { name: 'myhordes.fixtures.town', priority: 100 } ]

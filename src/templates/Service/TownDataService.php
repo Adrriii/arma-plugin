@@ -9,7 +9,7 @@ class TownDataService implements FixtureProcessorInterface {
     public function process(array &$data, ?string $tag = null): void
     {
         $order = 0;
-        $data = [
+        $data = array_replace_recursive($data, [
             'arma' =>  [
                 'name' =>'arma',
                 'label' =>'Armageddon',
@@ -49,6 +49,6 @@ class TownDataService implements FixtureProcessorInterface {
                 'ranked' => false,
                 'orderBy' => $order--
             ],
-        ];
+        ]);
     }
 }
